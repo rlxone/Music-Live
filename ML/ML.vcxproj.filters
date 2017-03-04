@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ML.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Buttons.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Labels.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="XML_Parsing.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Download.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Panels.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MLConvertImage.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Music.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskBar.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackBar.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MLUtils.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollBar.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MLMessages.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ML.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Buttons.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Labels.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="XML_Parsing.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Download.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Panels.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Music.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Taskbar.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackBar.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MLUtils.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollBar.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ML.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="ML.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\Desktop\BMP_SONGS_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_FRAME.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_SONGS_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_SONGS_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_SONGS_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_EXIT_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_EXIT_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_EXIT_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MUSIC_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MUSIC_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MUSIC_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_FRAME_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_FRAME_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_FRAME_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_HIGH_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_HIGH_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_HIGH_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_LOW_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_LOW_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PANEL_LOW_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_SLIDE_LEFT_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_SLIDE_LEFT_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_SLIDE_LEFT_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_SLIDE_RIGHT_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_SLIDE_RIGHT_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_SLIDE_RIGHT_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MINIMIZE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MINIMIZE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MINIMIZE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BML_ML_LOGO.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ML_LOGO.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_NEXT_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_NEXT_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_NEXT_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PAUSE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PAUSE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PAUSE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PLAY_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PLAY_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PLAY_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PREV_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PREV_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PREV_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_STOP_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_STOP_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_STOP_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_SHADOW.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_BITRATE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_BITRATE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_BITRATE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_LENGTH_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_LENGTH_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_LENGTH_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_NAME_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_NAME_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_NAME_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_NUMBER_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_NUMBER_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LISTVIEW_NUMBER_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MUSIC_PANEL.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PLAY_TRACKBAR.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_PLAY_TRACKBAR_BKG.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ADD_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ADD_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ADD_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_NO_COVER_THUMB.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_NEXT.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_OVER_PAUSE.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_OVER_PLAY.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_PLAY.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_PREV.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_PAUSE.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_FRAME_MUSIC.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_REPEAT_NO_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_REPEAT_NO_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_REPEAT_NO_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_REPEAT_YES_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_REPEAT_YES_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_REPEAT_YES_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_RANDOM_NO_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_RANDOM_NO_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_RANDOM_NO_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_RANDOM_YES_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_RANDOM_YES_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_RANDOM_YES_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ICON_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ICON_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ICON_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_NO_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_TRACKBAR_BKG.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_YES_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_YES_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_YES_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_NO_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_VOLUME_NO_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CHOISE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CHOISE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CHOISE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CREATE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CREATE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_CREATE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_DELETE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_DELETE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_DELETE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_RENAME_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_RENAME_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_RENAME_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_SAVE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_SAVE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_SAVE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_BACK_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_BACK_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_BACK_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_FILE_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_FILE_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_FILE_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_FOLDER_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_FOLDER_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_ADD_FOLDER_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MUSIC_ACTIVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_SONGS_ACTIVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_ALBUM_NO_COVER.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_QUOTE_LASTFM.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_QUOTE_MUSIC.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_FRAME_QUOTE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_LOGO_ABOUT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_OPEN_CLICK.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_OPEN_DEFAULT.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\BMP_MENU_OPEN_MOVE.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="GRAPH\ICONS\ICON_MENU_CREATE.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5AC7FD05-A370-46B3-9BEB-9255AED48659}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ML</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsC</CompileAs>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Urlmon.lib;Wininet.lib;Comctl32.lib;Ole32.lib;$(MSBuildProjectDirectory)\MODULES\libxml\lib\libxml2.lib;$(MSBuildProjectDirectory)\MLTools.lib;$(MSBuildProjectDirectory)\MODULES\bass\bass.lib;$(MSBuildProjectDirectory)\MODULES\id3v2lib\id3v2lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>ML.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Urlmon.lib;Wininet.lib;Comctl32.lib;MSVCRT.lib;$(MSBuildProjectDirectory)\MODULES\libxml\lib\libxml2.lib;$(MSBuildProjectDirectory)\MLTools.lib;$(MSBuildProjectDirectory)\MODULES\bass\bass.lib;$(MSBuildProjectDirectory)\MODULES\id3v2lib\id3v2lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO /NODEFAULTLIB:LIBCMT.lib /LTCG</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>ML.manifest %(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ML.h" />
+    <ClInclude Include="MLMessages.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScrollBar.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Buttons.h" />
+    <ClInclude Include="Labels.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="TrackBar.h" />
+    <ClInclude Include="XML_Parsing.h" />
+    <ClInclude Include="Download.h" />
+    <ClInclude Include="Panels.h" />
+    <ClInclude Include="MLConvertImage.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="TaskBar.h" />
+    <ClInclude Include="MLUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ML.cpp" />
+    <ClCompile Include="ScrollBar.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Buttons.cpp" />
+    <ClCompile Include="Labels.cpp" />
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="TrackBar.cpp" />
+    <ClCompile Include="XML_Parsing.cpp" />
+    <ClCompile Include="Download.cpp" />
+    <ClCompile Include="Panels.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="Taskbar.cpp" />
+    <ClCompile Include="MLUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ML.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\Desktop\BMP_SONGS_DEFAULT.bmp" />
+    <Image Include="GRAPH\BML_ML_LOGO.bmp" />
+    <Image Include="GRAPH\BML_SLIDE_LEFT_CLICK.bmp" />
+    <Image Include="GRAPH\BML_SLIDE_LEFT_DEFAULT.bmp" />
+    <Image Include="GRAPH\BML_SLIDE_LEFT_MOVE.bmp" />
+    <Image Include="GRAPH\BML_SLIDE_RIGHT_CLICK.bmp" />
+    <Image Include="GRAPH\BML_SLIDE_RIGHT_DEFAULT.bmp" />
+    <Image Include="GRAPH\BML_SLIDE_RIGHT_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_ADD_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_ADD_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_ADD_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_ALBUM_NO_COVER.bmp" />
+    <Image Include="GRAPH\BMP_EXIT_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_EXIT_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_EXIT_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_FRAME.bmp" />
+    <Image Include="GRAPH\BMP_FRAME_MUSIC.bmp" />
+    <Image Include="GRAPH\BMP_FRAME_QUOTE.bmp" />
+    <Image Include="GRAPH\BMP_ICON_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_ICON_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_ICON_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_BITRATE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_BITRATE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_BITRATE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_LENGTH_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_LENGTH_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_LENGTH_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_NAME_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_NAME_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_NAME_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_NUMBER_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_NUMBER_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_NUMBER_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_LISTVIEW_SHADOW.bmp" />
+    <Image Include="GRAPH\BMP_LOGO_ABOUT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_FILE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_FILE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_FILE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_FOLDER_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_FOLDER_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_FOLDER_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_ADD_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_BACK_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_BACK_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_BACK_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CHOISE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CHOISE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CHOISE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CREATE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CREATE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_CREATE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_DELETE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_DELETE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_DELETE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_OPEN_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_OPEN_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_OPEN_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_RENAME_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_RENAME_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_RENAME_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MENU_SAVE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MENU_SAVE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MENU_SAVE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MINIMIZE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MINIMIZE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MINIMIZE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_ML_LOGO.bmp" />
+    <Image Include="GRAPH\BMP_MUSIC_ACTIVE.bmp" />
+    <Image Include="GRAPH\BMP_MUSIC_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_MUSIC_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_MUSIC_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_MUSIC_PANEL.bmp" />
+    <Image Include="GRAPH\BMP_NEXT_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_NEXT_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_NEXT_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_NO_COVER_THUMB.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_FRAME_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_FRAME_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_FRAME_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_HIGH_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_HIGH_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_HIGH_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_LOW_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_LOW_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_LOW_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_PANEL_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_PAUSE_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PAUSE_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PAUSE_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_PLAY_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PLAY_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PLAY_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_PLAY_TRACKBAR.bmp" />
+    <Image Include="GRAPH\BMP_PLAY_TRACKBAR_BKG.bmp" />
+    <Image Include="GRAPH\BMP_PREV_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_PREV_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_PREV_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_QUOTE_LASTFM.bmp" />
+    <Image Include="GRAPH\BMP_QUOTE_MUSIC.bmp" />
+    <Image Include="GRAPH\BMP_RANDOM_NO_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_RANDOM_NO_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_RANDOM_NO_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_RANDOM_YES_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_RANDOM_YES_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_RANDOM_YES_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_REPEAT_NO_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_REPEAT_NO_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_REPEAT_NO_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_REPEAT_YES_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_REPEAT_YES_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_REPEAT_YES_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_SONGS_ACTIVE.bmp" />
+    <Image Include="GRAPH\BMP_SONGS_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_SONGS_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_SONGS_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_STOP_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_STOP_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_STOP_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_NO_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_NO_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_NO_MOVE.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_TRACKBAR_BKG.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_YES_CLICK.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_YES_DEFAULT.bmp" />
+    <Image Include="GRAPH\BMP_VOLUME_YES_MOVE.bmp" />
+    <Image Include="GRAPH\ICONS\ICON_MENU_CREATE.ico" />
+    <Image Include="GRAPH\ICONS\ICON_NEXT.ico" />
+    <Image Include="GRAPH\ICONS\ICON_OVER_PAUSE.ico" />
+    <Image Include="GRAPH\ICONS\ICON_OVER_PLAY.ico" />
+    <Image Include="GRAPH\ICONS\ICON_PAUSE.ico" />
+    <Image Include="GRAPH\ICONS\ICON_PLAY.ico" />
+    <Image Include="GRAPH\ICONS\ICON_PREV.ico" />
+    <Image Include="ML.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
