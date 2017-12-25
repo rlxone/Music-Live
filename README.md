@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://github.com/rlxone/Music-Live/blob/master/Images/logo.png"/>
   <img src="https://github.com/rlxone/Music-Live/blob/master/Images/mockup.png"/>
 </p>
 
